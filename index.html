@@ -10,55 +10,28 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="https://glitch.com/favicon.ico" />
-    <script src="https://cdn.plyr.io/3.6.8/plyr.js"></script>
+<script src="https://cdn.plyr.io/3.6.8/plyr.polyfilled.js"></script>
 
-    <!-- 
-      This is an HTML comment
-      You can write text in a comment and the content won't be visible in the page
-    -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />
 
-    <title>Hello World!</title>
-
-    <!-- Meta tags for SEO and social sharing -->
-    <link rel="canonical" href="https://glitch-hello-website.glitch.me/" />
-    <meta
-      name="description"
-      content="A simple website, built with Glitch. Remix it to get your own."
-    />
-    <meta name="robots" content="index,follow" />
-    <meta property="og:title" content="Hello World!" />
-    <meta property="og:type" content="article" />
-    <meta property="og:url" content="https://glitch-hello-website.glitch.me/" />
-    <meta
-      property="og:description"
-      content="A simple website, built with Glitch. Remix it to get your own."
-    />
-    <meta
-      property="og:image"
-      content="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2Fhello-website-social.png?v=1616712748147"
-    />
-    <meta name="twitter:card" content="summary" />
-
-    <!-- Import the webpage's stylesheet -->
-    <link rel="stylesheet" href="/style.css" />
-
-    <!-- Import the webpage's javascript file -->
-    <script src="/script.js" defer></script>
   </head>
   <body>
-    	 <div id="player"  class="plyr__video-embed"   style="height:95vh;width:100%;">
-	   <iframe
-    src="https://www.youtube.com/embed/46842WB1mrw?autoplay=1"
+<div class="plyr__video-embed" id="player">
+  <iframe
+    src="https://www.youtube.com/embed/bTqVqk7FSmY?autoplay==1&origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1"
     allowfullscreen
     allowtransparency
     allow="autoplay"
   ></iframe>
-	 </div>
+</div>
+
    <script>
+   
      	const player = new Plyr('#player', {});
 
 										// Expose player so it can be used from the console
 										window.player = player;
+  
     </script>
   </body>
 </html>
